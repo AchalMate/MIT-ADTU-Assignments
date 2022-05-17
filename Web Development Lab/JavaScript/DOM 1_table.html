@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Create a table using DOM </title>
+	<style type="text/css">
+		table,tr,td,th{
+			border: 1px solid black;
+
+		}
+	</style>
+</head>
+<body>
+	<table id = t1> 
+		<tr>
+			<th>Sr No </th>
+			<th>Subject Name </th>
+			<th>Marks</th>
+		</tr>
+		<tr>
+			<td>A</td>
+			<td>PHP</td>
+			<td>30</td>
+		</tr>
+		<tr>
+			<td>B</td>
+			<td>JSP</td>
+			<td>30</td>
+		</tr>
+	</table>
+<form>
+	<input type="button" name="click" value="Click"  onclick="Create_Rows()">
+
+	<script type="text/javascript">
+		function Create_Rows(){
+
+			var x = document.getElementById("t1");
+			var tr1 = document.createElement('tr')
+			var td1 = document.createElement('td')
+			var td2 = document.createElement('td')
+			var td3 = document.createElement('td')
+
+			//x.appendChild(tr1)
+			td1_text = document.createTextNode('C')
+			td2_text= document.createTextNode('Web')
+			td3_text= document.createTextNode(30)
+
+			tr1.appendChild(td1)
+			tr1.appendChild(td2)
+			tr1.appendChild(td3)
+
+			td1.appendChild(td1_text)
+			td2.appendChild(td2_text)
+			td3.appendChild(td3_text)
+
+			x.appendChild(tr1)
+
+		}
+	</script>
+</body>
+</html>
