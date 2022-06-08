@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Company Registration form </title>
+	<style type="text/css" media="screen">
+     .{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: helvetics;
+  }
+body{
+     background-size: cover;
+     background-attachment: fixed;
+     }
+
+  .main{
+        width: 500px;
+        margin: 50px auto;
+        border: 3px solid black;
+        border-radius: 10px;
+    border-left: 40px solid pink;
+    border-right: 40px solid pink;
+    background: purple;
+}
+    .info{
+           
+        font-size: 20px;
+         font-wieght: bold;
+         text-align: center;
+         color:red;
+         text-shadow: 1px 1px 2px   #000;
+}
+   .form-box{
+          padding: 25px;
+}
+ label{
+      color: navy;
+      font-size: 20px;
+      padding: 10px;
+}
+ .inp,#msg-box{ 
+     width: 100%;
+      padding: 10px;
+      margin-bottom: 5px;
+      border; 2px solid pink;
+      border-radius: 5px;
+     font-weight: bold;
+     border-right:20px solid yellow;
+     border-left:20px solid yellow;
+     color: navy;
+} 
+  .inp:focus, #msg-box:focus{
+     outline:none;
+     border: 2px solid navy;
+     border-right:20px solid navy;
+     border-left:20px solid navy;
+}
+ #msg-box{
+     resize: none;
+     height: 80px
+}
+
+</style>  
+</head>
+<body>
+<div class="main">	
+	<center><div class="info"><h2>Company Registration Form</h2></div></center>
+		<form>
+			<b>
+			<label>Enter the Full Name</label>
+			<input type="text"  name="fname" placeholder="Enter the Full Name"><br><br><br>
+			<label>Enter the Contact Number</label>
+			<input type="number" name="Contact" placeholder="Enter the Contact Number"><br><br><br>
+      <label>Enter the Address</label> <br>
+      &ensp;&ensp;<textarea name="address" id="address" cols="30" rows="10" placeholder="Flat no. Lane no. area"></textarea><br><br><br>
+      <label>Enter the Date of Birth</label>
+      <input type="Date" name="dob" placeholder="Enter the Date of Birth"><br><br><br>
+			<label>Enter the Email Id </label>
+			<input type="email" name="email" placeholder="Enter the Email id"><br><br><br>
+      
+			<label>Enter the Password </label>
+			<input type="password"name="password" placeholder="Enter the password"><br><br><br>
+      <label>Confirm  the Password </label>
+      <input type="password"name="cpassword" placeholder="Confirm  the password"><br><br><br>
+
+			<label>Gender :</label><br>
+			
+				<input type="radio"name="gender" value="Male">Male
+				<input type="radio"name="gender" value="Female">Female<br><br><br>
+				<label>Education :</label>
+        <select name="Graudation">
+						<option>B.Tech</option>
+						<option>M.Tech</option>
+						<option>BE</option>
+						<option>BCS</option>
+            <option >MCA</option>
+            <option >BCA</option>
+				</select><br><br><br>
+			<label>Document require:</label><br>
+<input type="Checkbox" >Experience Letter<br>
+<input type="Checkbox">Applied Certificate<br>
+<input type="Checkbox">Grade Marksheet<br><br><br>
+<center><button type="Submit">Submit</button>
+  <button type="reset">Reset</button></center>
+
+
+		</b></form>
+</div>
+</body>
+</html>

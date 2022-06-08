@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(coffee2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+html{
+
+    scroll-behavior: smooth;
+}
+
+.nav_bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+.nav_bar li {
+  float: left;
+}
+
+.nav_bar li a {
+
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: cursive;
+}
+
+.nav_bar li p {  
+    font-size: 30px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; 
+  margin-right: 250px;
+  font-family: cursive;
+}
+
+.nav_bar li a:hover {
+  background-color:black ;
+  opacity: 0.1;
+}
+
+.nav_bar .active { 
+  color: brown;
+  font-family: cursive;
+}
+
+
+.left {
+
+color: white;
+position: absolute;
+  left: 0px;
+  width: 100%; 
+  padding: 10px;
+  margin-top: 100px;
+  margin-left: 0;
+  align-content: center;
+ 
+}
+
+
+.left img{
+    margin-left: 50px;
+    height: 200px;
+    width: 200px;
+}
+
+
+.sologon h1{
+    margin-left: 50px;
+    color: white;
+    font-family: cursive;
+    font-size: 35px;
+    opacity: 0.4;
+    color: beige;
+}
+
+.sologon h3{
+    margin-left: 50px;
+    color: white;
+    font-size: 25px;
+    color: beige;
+    opacity: 0.5;
+    margin-left: 310px;
+    font-family: cursive;
+}
+
+
+
+.container {
+width:100%;
+margin-top: 320px;  
+}
+
+
+.container2 {
+width:100%;
+margin-top: 50px;  
+}
+
+
+.one,.two,.three,.four{
+width:20%;
+height:20%;
+text-align: center;
+margin: 5px;
+margin-left: 50px;
+display:inline-block;    
+transition: 0.4s;
+box-shadow: 0 12px 24px 0 rgba(185,122,187, 0.2);
+
+}
+
+.one:hover{
+
+box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.3);
+}
+
+.two:hover{
+
+box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+.three:hover{
+
+box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+.one img{
+     background-size: cover;
+ }
+
+
+.two img{
+     background-size: cover;
+ }
+
+
+
+.three img{
+     background-size: cover;
+ }
+
+
+
+
+
+.container3{
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color:white;
+    padding: 20px;
+    border: 2px solid brown;
+    border-radius: 20px;
+    color: black;
+    margin-left: 250px;
+    margin-right: 250px;
+    transition: 0.4s;
+    box-shadow: 50px 50px 50px 50px rgba(185,122,187, 0.2);
+}
+
+
+.container3:hover{
+
+box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+}
+.col-10{
+    float: left;
+    width:10%;
+    margin-top: 6px;
+}
+.col-90{
+    float: left;
+    width: 90%;
+    margin-top: 6px;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+input[type=text], input[type=email], input[type=number], input[type=select], input[type=date],input[type=select],input[type=password], input[type=tel]
+{
+    font-family: cursive;
+    width: 45%;
+    padding: 8px;
+    border: 1px solid rgb(168, 166, 166);
+    border-radius: 4px;
+    resize: vertical;
+    color: black;
+}
+
+
+
+textarea{
+    color: black;
+    font-family: cursive;
+    width:45%;
+    padding: 8px;
+    border: 1px solid rgb(168, 166, 166);
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=checkbox]{
+
+    font-family: cursive;
+    width: 1%;
+    padding-left: 0%;
+    border: 1px solid rgb(168, 166, 166);
+    border-radius: 4px;
+    resize: vertical;
+   color: black;
+}
+
+.login h1{
+    margin-top: 100px;
+    font-family: cursive;
+    font-size: medium;
+    font-style: normal;
+    font-weight: bold;
+    color: brown;
+    text-align: center;
+    text-decoration: underline;
+}
+
+label{
+    color: black;
+    font-family: cursive;
+    padding: 8px 8px 8px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    font-family: cursive;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float:right;
+}
+
+input[type=submit]:hover {
+    font-family: cursive;
+background-color: green;
+}

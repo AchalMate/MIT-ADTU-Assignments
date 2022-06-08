@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Arithmatic Operations</title>
+</head>
+<body style="margin-left: 500px";>
+	<br><h2> &emsp; Arithmetic Operation</h2>
+		<form >
+		<b>Enter the 1st Number : <input type="text" id="num1">
+		<br><br>
+		Enter the 2nd Number :<input type="text" id="num2">
+		<br><br></b>
+		<div>
+		<input type="radio" id="add" value ="add" name = 'add' onclick = "Add()">Addition<br>
+		<input type="radio" id="sub" value ="Sub" name = 'sub' onclick = "Sub()">Subtarction<br>
+		<input type="radio" id="mult" value ="Mult" name = 'mult' onclick = "Mult()">Multiplication<br>
+		<input type="radio" id="div" value ="Div" name = 'div' onclick = "Div()">Division<br>
+	</div>
+
+	<p id = "ans"></p>
+
+	<br><br><br>
+	<h2> &emsp; Display Name</h2>
+	<b>
+	First Name : <input type="text" name="" id="fname"><br><br>
+		Last Name : <input type="text" name="" id="lname"></b><br>
+		<input type="button" name="bt2" value="click" onclick="nameIntro()"><br>
+		<p id="showName"> </p>	<br>
+	<br><br><br><b>
+	Enter the Number:<input type="text" id = "even_odd_num"> 
+	<input type="button" name="Click" value="Click" onclick="Check_Even_Odd()"><br>
+	<p id = "even_odd_ans"></p>
+	</form>
+	
+	
+
+</body>
+<script type="text/javascript">
+	
+	
+	function Add(){
+		var num1 = document.getElementById("num1").value;
+		var num2 = document.getElementById("num2").value;
+	
+	
+		var add = parseInt(num1)+parseInt(num2);
+
+		var add_ans = document.getElementById("ans");
+		add_ans.innerHTML = " Addition of "+ num1 +" and"+num2 +" is "+ add;
+		document.getElementById("add").checked = true;
+        document.getElementById("sub").checked = false;
+        document.getElementById("mult").checked = false;
+        document.getElementById("div").checked = false;
+	}
+	function Sub(){
+		var num1 = document.getElementById("num1").value;
+		var num2 = document.getElementById("num2").value;
+		var sub = num1-num2;
+
+		var sub_ans = document.getElementById("ans");
+		sub_ans.innerHTML = " Subtraction of "+ num1 +" and "+num2 +" is "+ sub;
+		document.getElementById("add").checked = false;
+        document.getElementById("sub").checked = true;
+        document.getElementById("mult").checked = false;
+        document.getElementById("div").checked = false;
+	}
+	function Mult(){
+		var num1 = document.getElementById("num1").value;
+		var num2 = document.getElementById("num2").value;
+		var mult = num1*num2;
+
+		var mul_ans = document.getElementById("ans");
+		mul_ans.innerHTML = " Multiplication of "+ num1 +" and"+num2 +" is "+ mult;
+		document.getElementById("add").checked = false;
+        document.getElementById("sub").checked = false;
+        document.getElementById("mult").checked = true;
+        document.getElementById("div").checked = false;
+	}
+	function Div(){
+		var num1 = document.getElementById("num1").value;
+		var num2 = document.getElementById("num2").value;
+		var div = num1/num2;
+
+		var div_ans = document.getElementById("ans");
+		div_ans.innerHTML = " Division of "+ num1 +" and"+num2 +" is "+ div;
+		document.getElementById("add").checked = false;
+        document.getElementById("sub").checked = false;
+        document.getElementById("mult").checked = false;
+        document.getElementById("div").checked = true;
+	}
+	function nameIntro() {
+			var fName = document.getElementById("fname").value;
+			var lName = document.getElementById("lname").value;
+
+			var paraRef = document.getElementById('showName');
+			// paraRef.innerHTML += "Your Full Name is : "+ fName +" " +lName;
+			paraRef.innerHTML += "Hello "+ fName +" " +lName+" Welcome To World of JavaScript"
+
+		}
+	function Check_Even_Odd(){
+		var num = document.getElementById("even_odd_num").value;
+		num1 = parseInt(num)
+		if(num1 %2 ==0){
+			var ans = document.getElementById("even_odd_ans");
+			ans.innerHTML = num1 + " is Even Number";
+		}
+		else{
+			var ans = document.getElementById("even_odd_ans");
+			ans.innerHTML = num1 + " is Odd Number";	
+		}
+	}
+
+</script>
+</html>

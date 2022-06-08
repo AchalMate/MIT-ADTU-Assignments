@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Student Details</title>
+</head>
+<body>
+<!-- Create the database table with the entries mentioned:
+[rollNo, studName, studDept, passingYear, classGrades] Grades should be either {First 
+Class, Second Class, Pass}
+Design the UI as given below and show the appropriate result through PHP script -->
+<form method = "POST">
+	Enter the Student Roll No: <input type="number" name="rollno" id="rollno"><br>
+	Enter the Student Name :<input type="text" name="studname" id="studname"><br>
+	Enter the Student Department :<input type="text" name="studdept" id="studdept"><br>
+	Select Year of Passing :<select name="year" id="year">
+						<option>2017</option>
+						<option>2018</option>
+						<option>2019</option>
+						<option>2020</option></select><br>
+    Select the Grade :<input type="radio"name="grade" value="First" id="grade" >First<br>
+					   <input type="radio"name="grade" value="Second" id="grade">Second<br>
+					   <input type="radio"name="grade" value="Third" value="grade">Third<br>
+
+	<input type="button" value="Display" onclick="fun()">
+</form>
+<script type="text/javascript">
+	function fun(){
+        var rollno=document.getElementById('rollno').value;
+        var name = document.getElementById('studname').value;
+        var dept = document.getElementById('studdept').value;
+        var year = document.querySelector('#year').value;
+        var grade = document.querySelector('input[name="grade"]:checked')  
+        
+    }
+</script>
+
+
+//        <!--  var xmlhttp = new XMLHttpRequest();
+
+// 		xmlhttp.onreadystatechange = function()
+// 		{
+// 			if (xmlhttp.readyState == 4 && xmlhttp.status ==200)
+// 			{		  
+// 		   	 myfunction(xmlhttp.responseText);
+// 			 //alert(xmlhttp.responseText);
+// 			}
+// 		}
+        
+//         var str="rollno="+r;
+
+//         xmlhttp.open("GET","ajax_fetch_from_roll.php?"+str, true)
+// 	    xmlhttp.send();
+  
+// 	}
+// 	function myfunction(str)
+// {
+// 	var arr =JSON.parse(str);
+// 	alert(arr);
+// 	var i;
+// 	var out = "<table border=2>";
+// 	for (i=0;i<arr.length;i++)
+// 	{
+//      out +="<tr><td>" +arr[i].rollno+"</td><td>"+arr[i].name+"</td><td>"+arr[i].marks+"</td></tr>";
+// 	}
+// 	out +="</table>";
+// 	document.getElementById("id1").innerHTML=out; -->
+// 
+
+
+</body>
+</html>

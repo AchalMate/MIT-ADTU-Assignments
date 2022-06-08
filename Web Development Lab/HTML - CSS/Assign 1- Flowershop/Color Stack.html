@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Color Stack</title>
+</head>
+<body>
+	<form>
+		Enter the color : 
+		<input type="text" id='colorname'>
+		<input type="button" value="Submit" onclick="check_color()">
+		<p id='view_color'></p>
+
+		
+	</form>
+	<script type="text/javascript">
+		function check_color(){
+			var Color = new Array("Red","Green","Yellow");
+		 	var val = document.querySelector('input[type=text]').value;
+		 	var ans = document.getElementById("view_color")
+		 	if (Color.includes(val)){
+		 		alert("Color is Already Present");
+		 		ans.innerHTML = Color;
+
+		 	}
+		 	else{
+		 		Color.push(val);
+		 		alert("Color is not Present");
+		 		ans.innerHTML= Color;
+		 	}
+
+		}
+		
+		            
+						
+	</script>
+
+</body>
+</html>

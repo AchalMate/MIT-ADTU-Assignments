@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Multiplication Table</title>
+
+
+</head>
+<body style="margin-left: 500px";>
+	<br><h2> &emsp; Muliplication Table</h2>
+	<form >
+		<b>Enter the  Number : <input type="text" id="num1">
+		<br><br>
+		
+ 
+		<input type="button" name="Click" value="Multiplication Table" onclick="Multiplication()"><br>
+		<input type="button" name="Click" value="Prime Number" onclick="Prime()"><br>
+		<input type="button" name="Click" value="Factorail" onclick="Factorail()"><br>
+		<p id = "anstable"></p>
+		<p id = "prime"></p>
+		<p id = "Factorail"></p>
+	</form>
+	
+	<script type="text/javascript">
+	var num = document.getElementById("num1").value;
+		var num = parseInt(num);
+	
+	function Multiplication(){
+		var num = document.getElementById("num1").value;
+		var num = parseInt(num);
+
+			
+		var answer =0;
+		for(var i = 1;i <=10;i++){
+
+			
+			var mult_ans = document.getElementById("anstable");
+			answer = i * num;
+			mult_ans.innerHTML += num +" * "+i +" = " +answer+"<br>";
+		}
+	}
+
+	function Prime() {
+		var num = document.getElementById("num1").value;
+		var num = parseInt(num);
+		var flag = true;
+		var ans = document.getElementById('prime');
+
+		for(var i = 2;i < num -1; i++){
+			if( num % i == 0){
+				flag = false;
+				break;
+			}
+		}
+		if (flag ==true)
+			
+			ans.innerHTML += num + " is prime";
+		else
+			ans.innerHTML += num + " not prime";
+
+		
+	}
+
+	function check_Factorail(num){
+		
+
+		if(num == 0){
+			return 1;
+		}
+		else{
+			return num * check_Factorail(num-1);
+		}
+	}
+	function Factorail(){
+		var num = document.getElementById("num1").value;
+		var num = parseInt(num);
+		var ans = document.getElementById('Factorail');
+		ans.innerHTML = check_Factorail(num)
+
+	}
+	
+
+
+</script>
+	
+
+</body>
+
+</html>
+
+
+

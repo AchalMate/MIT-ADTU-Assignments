@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flower Shop</title>
+	<style type="text/css">
+     .header1{
+     	height:60px;
+     	background-color:  black;
+     }
+     .header2{
+     	background-color:pink;
+     	height: 50px;
+
+     }
+     .heading1{
+     	 font-size: 50px;
+         font-weight: bold;
+         text-align: center;
+         color:red;
+         text-shadow: 1px 1px 2px   #000;
+     }
+     .filter_text{
+     	color:white;
+     	font-size: 25px;
+         font-weight: bold;
+         text-align: center;
+     }
+     .Flower{
+     	font-size: 20px;
+         font-weight: bold;
+         color: red
+
+     }
+     body{
+     background-image:url(g4.jpg);
+     background-size: cover;
+     background-attachment: fixed;
+     height: 100%
+     
+     }
+     
+     label{
+             
+    }
+    .nav_top{
+    	float: left;
+    	width: 100%;
+		text-decoration: none;
+		padding: 5px;
+		font-style: bold;		
+	}
+	.nav_top a,.searchbox{
+		margin-left: 15px;
+		color: navy;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      float: left;
+		text-decoration: none;
+		padding: 5px;
+		
+		
+		
+	}
+
+    .searchbox{ 
+     width: 700px;
+      padding: 2px;
+      align-self: center;
+      border; 2px solid pink;      
+     font-weight: bold;     
+     color: navy;
+ 	}
+     .choicedata{
+		color:white;
+     	font-size: 20px;        
+         text-align: center;
+     }
+     .filter_form{
+     	background-color: black;
+     	width: 200px;
+     }
+     
+     .split_left{
+     	height: 100%;
+     	width: 200px;
+     	position: absolute;
+     	z-index: 1;
+     	overflow-x: hidden;
+     	padding-top: 10px;
+     	left: 0;
+
+     }
+     .info{
+           
+        font-size: 20px;
+         font-wieght: bold;
+         text-align: center;
+         color:red;
+         text-shadow: 1px 1px 2px   #000;
+}
+   .form-box{
+          padding: 25px;
+}
+tr,td{
+	padding: 10px;
+	border: solid white; 5px;
+}
+ label{
+      color: navy;
+      font-size: 20px;
+      padding: 10px;
+}
+}
+ .inp,#msg-box{ 
+     width: 100%;
+      padding: 10px;
+      margin-bottom: 5px;
+      border; 2px solid pink;
+      border-radius: 5px;
+     font-weight: bold;
+     border-right:20px solid yellow;
+     border-left:20px solid yellow;
+     color: navy;
+} 
+  .inp:focus, #msg-box:focus{
+     outline:none;
+     border: 2px solid navy;
+     border-right:20px solid navy;
+     border-left:20px solid navy;
+}
+ #msg-box{
+     resize: none;
+     height: 80px
+}
+
+     .Split_right{
+     height: 100%;
+     	width: 85%;
+     	position: absolute;
+     	z-index: 1;
+     	overflow-x: hidden;
+     	padding-top: 10px;
+     	right:  0;	
+     }
+    /* .Registration{
+    	margin-top: 2000px
+     	 width: 500px;
+        margin: 50px auto;
+        border: 3px solid black;
+        border-radius: 10px;
+    border-left: 40px solid pink;
+    border-right: 40px solid pink;
+    /*backgroung: purple;*/
+     }*/
+
+	</style>
+<header class="header1">
+<font class='heading1'> <center><b>
+<marquee>Welcome to Photoholic_A_M's Flower Shop!!!</marquee></B></center></font>
+</header>
+<header class="header2">
+	<center>
+	<div class= 'nav_top'>
+		<b>
+		<a href="#home">Home</a>
+		<input type="search" placeholder="Search" class="searchbox"> 
+		<a href="#edu">Orders</a>
+		<a href="#proj">Login</a>
+		<a href="#reg" target = 'blank'>Registration</a>
+		<a href="https://www.instagram.com/photoholic_am/" target = 'blank'>Contact Me</a></b>
+	</div>
+	
+	
+	</center>
+</header>
+</head>
+<body>
+	<div class = split>
+<div class = "split_left">
+	<form class="filter_form">
+		<label class = 'filter_text'>Filters</label><br><br>
+		<label class = 'filter_text'>Catergory </label><br>
+		<input type="Checkbox" class= 'optionbox' ><label class='choicedata'>Roses</label><br>
+		<input type="Checkbox" class= 'optionbox'><label class='choicedata'>Sunflowers</label><br>
+		<input type="Checkbox" class= 'optionbox'><label class='choicedata'>Lotuses</label><br>
+		<input type="Checkbox" class= 'optionbox'><label class='choicedata'>Lilies</label><br>
+		<input type="Checkbox" class= 'optionbox'><label class='choicedata'>Hibiscus</label><br>
+		<input type="Checkbox" class= 'optionbox'><label class='choicedata'>Gerbers</label><br>
+		<input type="Checkbox" class= 'optionbox'><label class='choicedata'>pansies</label><br>
+		<input type="Checkbox" class= 'optionbox'><label class='choicedata'>iris</label><br>
+		<input type="Checkbox" class= 'optionbox'><label class='choicedata'>Marigolds</label><br>
+		<input type="Checkbox" class= 'optionbox'><label class='choicedata'>Tulips</label><br>
+		<input type="Checkbox" class= 'optionbox'><label class='choicedata'>Dublin</label><br><br>
+
+		<label class = 'filter_text'>Color </label><br>
+		<input type="Checkbox" class= 'optionbox' ><label class='choicedata'>Red</label><br>
+		<input type="Checkbox" class= 'optionbox'><label class='choicedata'>Pink</label><br>
+		<input type="Checkbox" class= 'optionbox'><label class='choicedata'>Yellow</label><br>
+		<input type="Checkbox" class= 'optionbox'><label class='choicedata'>Blue</label><br>
+		<input type="Checkbox" class= 'optionbox'><label class='choicedata'>black</label><br>
+		<input type="Checkbox" class= 'optionbox'><label class='choicedata'>while</label><br>
+		<input type="Checkbox" class= 'optionbox'><label class='choicedata'>Navy Blue</label><br>
+		<input type="Checkbox" class= 'optionbox'><label class='choicedata'>Green</label><br>
+		<input type="Checkbox" class= 'optionbox'><label class='choicedata'>Purple</label><br><br>
+
+		<label class = 'filter_text'>Price </label><br>
+		<input type="Checkbox" class= 'optionbox' ><label class='choicedata'>Less Than 500</label><br>
+		<input type="Checkbox" class= 'optionbox'><label class='choicedata'>500-1000</label><br>
+		<input type="Checkbox" class= 'optionbox'><label class='choicedata'>1000-1500</label><br>
+		<input type="Checkbox" class= 'optionbox'><label class='choicedata'>1500-2000</label><br><br>
+
+		<label class = 'filter_text'>Discount </label><br>
+		<input type="radio" name="gender" value="10"><label class='choicedata'>Less Than 50%</label><br>
+		<input type="radio" name="gender" value="10"><label class='choicedata'>50%  and Above</label><br>
+		
+
+	</form>
+	
+</div>
+<div class="Split_right">
+	<table>
+		<tr>
+			<td><img src="bg.jpg" height="300px" width="300px"><br><center><LABEL class = 'Flower'>Name : Pink Dublin<br>Price : 150 Rs</LABEL></center> </td>
+			<td><img src="bg3.jpg" height="300px" width="300px"><center><LABEL class = 'Flower'>Name : Red Rose<br>Price : 200 Rs</LABEL></center></td>
+			<td><img src="hibiscus.jpg" height="300px" width="300px"><center><LABEL class = 'Flower'>Name : white Hibiscus<br>Price : 100 Rs</LABEL></center></td>
+			<td><img src="orangerose.jpg" height="300px" width="300px"><center><LABEL class = 'Flower'>Name : Orange Rose<br>Price : 150 Rs</LABEL></center></td>
+		</tr>
+		</tr>
+
+		<tr>
+			<td><img src="g4.jpg" height="300px" width="300px"><center><LABEL class = 'Flower'>Name : White Rose<br>Price : 170 Rs</LABEL></center></td>
+			<td><img src="pinklotus.jpg" height="300px" width="300px"><center><LABEL class = 'Flower'>Name : Pink Lotus<br>Price : 250 Rs</LABEL></center></td>
+			<td><img src="orangehibiscus.jpg" height="300px" width="300px"><center><LABEL class = 'Flower'>Name : Orange Hibiscus<br>Price : 150 Rs</LABEL></center></td>
+			<td><img src="pinkger.jpg" height="300px" width="300px"><center><LABEL class = 'Flower'>Name : Pink Gerbera<br>Price : 250 Rs</LABEL></center></td>
+		</tr>
+		<tr>
+			<td><img src="Marigold.jpg" height="300px" width="300px"><center><LABEL class = 'Flower'>Name : Yellow Marigold<br>Price : 150 Rs</LABEL></center></td>
+			<td><img src="lily.jpg" height="300px" width="300px"><center><LABEL class = 'Flower'>Name : while lily<br>Price : 300 Rs</LABEL></center></td>
+			<td><img src="purplelotus.jpg" height="300px" width="300px"><center><LABEL class = 'Flower'>Name : Purple Lotus <br>Price : 350 Rs</LABEL></center></td>
+			<td><img src="yellowrose.jpg" height="300px" width="300px"><center><LABEL class = 'Flower'>Name : Yellow Rose<br>Price : 250 Rs</LABEL></center></td>
+		</tr>
+		
+	</table>
+	
+</div>
+</div>
+
+</body>
+</html>
