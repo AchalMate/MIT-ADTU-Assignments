@@ -1,0 +1,62 @@
+<!-- a. Write a Java Script to accept array numbers as input and perform the following
+operations:
+Push, Pop, Reverse, Sort, Concatenate.
+
+2. Design HTML form to accept the student result and display the average percentage using
+Java Script. -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array Operation</title>
+
+	<script type="text/javascript">
+		var inputArray = [];
+		for(var i=0;i<5;i++){
+			inputArray[i]=prompt('Enter a value : ' + (i+1));
+		}
+		
+		document.write('<br>Entered Values are : ' +inputArray);
+		inputArray.push(10);
+		document.write('<br>Adding 10 in given array<br>' + inputArray);
+		inputArray.pop();
+		document.write('<br>poping the element :<br> '+inputArray);
+		document.write('<br>Reverse of Array<br>')
+		document.write(inputArray.reverse());
+		document.write('<br>Sort of Array<br>')
+		document.write(inputArray.sort(function(a,b){return a-b}));
+		var newArr = [10,20,30,40];
+		var letters = ['a', 'b', 'c'];
+		document.write("<br>Concationation <br>")
+		document.write(letters.concat(newArr));
+
+
+
+
+
+		function avg(){
+			var m1 = parseFloat(document.getElementById('m1').value);
+			var m2 = parseFloat(document.getElementById('m2').value);
+			var avg = (m1+m2)/2;
+			alert("Average of marks is "+ avg)
+
+
+		}
+	</script>
+</head>
+<body>
+
+	<form method="POST">
+		Enter the Student Marks : 
+		marks1 : <input type="number" name="marks1" id="m1">
+		marks2 : <input type="number" name="marks2" id="m2">
+		<input type="button" name="submit" value="submit" onclick="avg()">
+
+	</form>
+
+
+</body>
+</html>

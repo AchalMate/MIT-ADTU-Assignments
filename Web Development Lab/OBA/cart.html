@@ -1,0 +1,53 @@
+<!-- Write a Javascript to create shopping applications which adds the books in cart, updates 
+the existing books, delete the book and display the same. Create proper UI for the same. -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cart</title>
+
+	<script type="text/javascript">
+		
+		
+
+
+		function cart(){
+			purcBook = document.getElementById('book').value;
+			//alert(purcBook);
+			orgBooks = ['pcd','ml','wtl'];
+			cartBooks = [];
+
+
+			document.write("Books available in store are : <br>")
+			for(var i=0;i<orgBooks.length;i++){
+
+				if(orgBooks[i] === purcBook){
+					orgBooks.splice(i,1);
+					cartBooks.push(purcBook);
+				}				
+				document.write(orgBooks[i] + " ");
+			}
+			document.write("<br><br>");
+
+			document.write("Books available in cart are : <br>")
+			for(var j=0;j<cartBooks.length;j++){
+				document.write(cartBooks[j] + " ");
+			}
+
+		}
+
+	</script>
+
+
+</head>
+<body>
+
+Enter book name : <input type="text" name="book" id="book">
+<input type="button" name="submit" value="Add to cart" onclick="cart()">
+
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!-- a. Create an array using JavaScript and display the occurences of a specific character [For
+example; arr = [‘a, ‘b’, ‘a’, ‘c’, ‘z’] Output should be occurrences of a is 2]
+
+2. Declare a Javascript String array of colors say colors = [“Red”, “Green”, “Blue”] Accept
+a value from the user and add it to the array if the value is not present in the array. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>character occ and array insertion.</title>
+	<script type="text/javascript">
+		var arr = ['a','b','a','c','z'];
+		 for (i =0;i<arr.length;i++){
+		 	document.writeln(arr[i])
+		 }
+
+		//alert(arr);
+		var cnt = 0;
+
+		for(var i=0;i<arr.length;i++){
+			if(arr[i] == "a"){
+				cnt++;
+			}else{
+				continue;
+			}
+		}
+		document.writeln('<br>occurance of a : ' + cnt);
+
+		function addcolor(){
+			var newcolr = document.getElementById("clr").value;
+			var color = ['red','green','blue'];
+			//alert(color);
+			// for (i =0;i<color.length;i++){
+		 // 			document.writeln(color[i])
+		 // 	}
+		 	for(var i=0;i<color.length;i++){
+				if(color[i]==newcolr){
+					break;
+				}else{
+					color.push(newcolr);
+					break;
+				}
+			}
+			alert(color);
+		}
+		
+		
+		
+
+
+	</script>
+</head>
+<body>
+<form>
+	Enter the color :
+	<input type="text" id="clr">
+	<input type="button" name="submit" value="Submit" onclick="addcolor()">
+</form>
+</body>
+</html>
